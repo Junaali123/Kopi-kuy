@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="id">
+
+<html lang="id" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -10,10 +11,12 @@
 
     <title>Website Kopi Kuy</title>
     <link rel="stylesheet" href="css/style.css">
+
+
 </head>
 
 <body>
-    <nav>
+    <nav class="bg-dark py-4 bg-dark navbar-dark w-100">
         <div class="baris">
             <img class="logo" src="images/logo/logo_kuy.png">
             <div class="navigasi">
@@ -24,6 +27,8 @@
             </div>
             <a class="shop" href="produk.html">Shop</a>
             <a class="chat" href="https://wa.me/nomor_hp_anda_pakai_62" target="_blank">Chat</a>
+            <button id="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
+        </div>
         </div>
     </nav>
   
@@ -244,7 +249,7 @@
 <!--section contact us end-->
 <!--footer-->
 
-<footer>
+ <footer class="bg-dark py-4 bg-dark navbar-dark w-100">
   <div class="baris">
     <div class="navigasi">
       <a href="#best-seller">Best Seller</a>
@@ -259,8 +264,16 @@
 </footer>
 
 <!--footer end-->
+  <script>
+function toggleDarkMode() {
+    const body = document.querySelector('body');
+    body.classList.toggle('dark-mode');
+}
+</script>
+
 <!--Kode Selesai-->
     
+  
 </body>
 
 </html>
